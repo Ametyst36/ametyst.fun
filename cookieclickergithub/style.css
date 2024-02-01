@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    text-align: center;
+    background-color: rgb(255, 241, 190);
+    color: #111111;
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+}
+
+button {
+    color: #111111;
+    border-radius: 5px;
+    padding: 5px 20px;
+    margin: 5px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    background-color: #ffe8a7;
+    border: 0px black solid;
+}
+
+button:hover {
+    background-color: rgb(255, 241, 190);
+}
+
+#store {
+    width: 90%;
+    font-size: 20px;
+    background-color: rgb(255, 241, 190);
+    margin: auto;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px black;
+}
+
+.shopitem {
+    width: 50px;
+    height: 50px;
+}
+
+#a {
+    font-size: 30px;
+    font-weight: 800;
+    background-color: rgb(255, 241, 190);
+    width: 50%;
+    border-radius: 5px;
+    display: block;
+    margin: auto;
+    box-shadow: 0px 0px 5px black;
+    margin-top: 10px;
+}
+
+#stats {
+    font-style: italic;
+}
+
+#bigcontainer {
+    border-radius: 10px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 2.5vh;
+    margin-bottom: 2.5vh;
+}
+
+#bigcontainer > div {
+    width: calc(100% / 3);
+    background-color: #ffe8a7;
+    margin: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px black;
+}
+
+#cookie > img {
+    -webkit-animation:spin 8s linear infinite;
+    -moz-animation:spin 8s linear infinite;
+    animation:spin 8s linear infinite;
+}
+
+#cookie > img:hover {
+    scale: 0.95;
+}
+
+#cookie > img:active {
+    scale: 0.9;
+}
+
+@-moz-keyframes spin { 
+    100% { -moz-transform: rotate(360deg); } 
+}
+@-webkit-keyframes spin { 
+    100% { -webkit-transform: rotate(360deg); } 
+}
+@keyframes spin { 
+    100% { 
+        -webkit-transform: rotate(360deg); 
+        transform:rotate(360deg); 
+    } 
+}
+
+#id_confrmdiv
+{
+    display: none;
+    background-color: #ffe8a7;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px black;
+    width: calc(100% / 3);
+    box-sizing: border-box;
+    text-align: center;
+    margin: auto;
+}
+
+#confirmBox .message
+{
+    text-align: left;
+    margin-bottom: 8px;
+}
+
+#save {
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px black;
+    background-color: #ffe8a7;
+    width: calc(100% / 3);
+    margin: auto;
+}
+
+.achivements {
+    width: 50px;
+    display: inline;
+    border-radius: 5px;
+    filter: grayscale(100%);
+}
+
+#achivementbox {
+    padding: 10px;
+}
+
+@media (max-width: 1000px) {
+    #bigcontainer {
+        flex-direction: column;
+    }
+
+    #bigcontainer > div {
+        width: calc(80%);
+        margin: auto;
+        margin-bottom: 10px;
+    }
+    #bigcontainer > #achivementbox {
+        padding: 0px;
+    }
+}

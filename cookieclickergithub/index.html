@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Cookie Clicker
+        </title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="cookie.png">
+    </head>
+    <body>
+        <div id="id_confrmdiv">Are you sure you want to delete your data?
+            <button id="id_truebtn">Yes</button>
+            <button id="id_falsebtn">No</button>
+        </div>
+        <div id="bigcontainer">
+        <br>
+        <div id="cookie" style="cursor:pointer" class="divsmall"><br><img src="cookie.png" onclick="cookieClicked();"><p id="a">0</p><br>
+            <span id="stats">
+                Cookies Per Second: <span id="statscps">0</span><br>
+                All time cookies: <span id="statsatc">0</span><br>
+                Use fullscreen for the best experience!
+            </span>
+            <br><br></div>
+        <div id="achivementbox" class="divsmall">
+            <img src="a1.png" class="achivements" id="achivement1" title="Tier I | Get 1 cookie">
+            <img src="a2.png" class="achivements" id="achivement2" title="Tier II | Get 1K cookies">
+            <img src="a3.png" class="achivements" id="achivement3" title="Tier III | Get 100K cookies">
+            <img src="a4.png" class="achivements" id="achivement4" title="Tier IV | Get 1 Million cookies">
+            <img src="a5.png" class="achivements" id="achivement5" title="Tier V | Get 10 Million cookies"><br>
+            <img src="a6.png" class="achivements" id="achivement6" title="Tier VI | Get 100 Million cookies">
+            <img src="a7.png" class="achivements" id="achivement7" title="Tier VII | Get 1 Billion cookies">
+            <img src="a8.png" class="achivements" id="achivement8" title="Tier VIII | Get 10 Billion cookies">
+            <img src="a9.png" class="achivements" id="achivement9" title="Tier IX | Get 100 Billion cookies">
+            <img src="a10.png" class="achivements" id="achivement10" title="Tier X | Get 1 Trillion cookies"><br>
+            <img src="b1.png" class="achivements" id="achivement11" title="Tier I | Get 100 cookies per second">
+            <img src="b2.png" class="achivements" id="achivement12" title="Tier II | Get 1K cookies per second">
+            <img src="b3.png" class="achivements" id="achivement13" title="Tier III | Get 10K cookies per second">
+            <img src="b4.png" class="achivements" id="achivement14" title="Tier IV | Get 100K cookies per second">
+            <img src="b5.png" class="achivements" id="achivement15" title="Tier V | Get 1 Million cookies per second"><br>
+            <img src="c1.png" class="achivements" id="achivement16" title="Tier I | Buy 1 Doubler">
+            <img src="c2.png" class="achivements" id="achivement17" title="Tier II | Buy 5 Doubler">
+            <img src="c3.png" class="achivements" id="achivement18" title="Tier III | Buy 10 Doubler">
+            <img src="c4.png" class="achivements" id="achivement19" title="Tier IV | Buy 20 Doubler">
+            <img src="c5.png" class="achivements" id="achivement20" title="Tier V | Buy 50 Doubler"><br>
+            <img src="d1.png" class="achivements" id="achivement21" title="Tier I | Buy 10 Level Upgrade">
+            <img src="d2.png" class="achivements" id="achivement22" title="Tier II | Buy 20 Level Upgrade">
+            <img src="d3.png" class="achivements" id="achivement23" title="Tier III | Buy 50 Level Upgrade">
+            <img src="d4.png" class="achivements" id="achivement24" title="Tier IV | Buy 100 Level Upgrade">
+            <img src="d5.png" class="achivements" id="achivement25" title="Tier V | Buy 250 Level Upgrade"><br>
+        </div>
+        <div>
+        <br>
+        <br>
+        <div id="store" class="divsmall">
+            <span style="font-weight: 800; font-size: 20px;" id="levelcount">Level (1) </span>
+            <span style="font-size: 20px; font-style: italic;">(price : <span id="levelprice">20</span>) (+1/click)</span>
+            <button onclick="levelplus()">Buy</button><br>
+
+            <span style="font-weight: 800; font-size: 20px;" id="autoclickercount">Autoclicker (0) </span>
+            <span style="font-size: 20px; font-style: italic;">(price : <span id="autoclickerprice">10</span>) (1/s)</span>
+            <button onclick="autoclickerplus()">Buy</button><br>
+
+            <span style="font-weight: 800; font-size: 20px;" id="multiclickercount">Multiclicker (0) </span>
+            <span style="font-size: 20px; font-style: italic;">(price : <span id="multiclickerprice">100</span>) (10/s)</span>
+            <button onclick="multiclickerplus()">Buy</button><br>
+
+            <span style="font-weight: 800; font-size: 20px;" id="ulticlickercount">Ulticlicker (0) </span>
+            <span style="font-size: 20px; font-style: italic;">(price : <span id="ulticlickerprice">1000</span>) (100/s)</span>
+            <button onclick="ulticlickerplus()">Buy</button><br>
+
+            <span style="font-weight: 800; font-size: 20px;" id="doublercount">Double Clicker (1x) </span>
+            <span style="font-size: 20px; font-style: italic;">(price : <span id="doublerprice">100000</span>) (+1x)</span>
+            <button onclick="doubleplus()">Buy</button><br>
+        </div>
+        <p></p>
+        </div>
+        </div>
+        <div id="save">
+            <button onclick="save()">Save</button>
+            <button onclick="load()">Load</button>
+            <button onclick="deletedata()">Delete</button>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
